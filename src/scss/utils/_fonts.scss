@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Axiforma";
-  src: url("../img/Axiforma-Medium.woff2") format("woff2");
+  src: url("../img/fonts/Axiforma-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,15 @@
 
 @font-face {
   font-family: "Axiforma";
-  src: url("../img/Axiforma-Regular.woff2") format("woff2");
+  src: url("../img/fonts/Axiforma-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../img/fonts/Axiforma-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -16,7 +24,7 @@
 
 @font-face {
   font-family: "Axiforma";
-  src: url("../img/Axiforma-Bold.woff2") format("woff2");
+  src: url("../img/fonts/Axiforma-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;

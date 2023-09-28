@@ -1,0 +1,47 @@
+.lessons {
+  margin-top: 240px;
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font: var(--H2);
+    color: var(--Text-Primary);
+    margin: 0 0 16px 0;
+    text-align: center;
+  }
+
+  &__desc {
+    font: var(--Body_text_18);
+    color: var(--Body-text);
+    text-align: center;
+    margin: 0 0 58px 0;
+  }
+
+  &__sign-up {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__label {
+  }
+
+  &__input {
+    color: var(--Outline-dark);
+    padding: 15px 45.97px 15px 33.545px;
+    align-items: center;
+    border-radius: 73px;
+    background: var(--Background---Dark);
+    border-color: transparent;
+  }
+
+  &__a {
+    padding: 12px 32px;
+    border-radius: 73px;
+    background: var(--Primary-200);
+    font: var(--Button);
+    color: var(--Background---White);
+  }
+}
