@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Gulp Starter Project my LemonSchool</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+	<section class="welcome">
+		<header class="header container">
+	<a href="/" class="header__logo"><img src="./img/logo.svg" alt="Lingua"></a>
+	<div class="header__nav">
+		<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+		<ul class="header__ul" id="headerUl">
+			<li class="header__li"><a class="header__a" href="/">Courses</a></li>
+			<li class="header__li"><a class="header__a" href="/">About us</a></li>
+			<li class="header__li"><a class="header__a" href="/">Teachers</a></li>
+			<li class="header__li"><a class="header__a" href="/">Pricing</a></li>
+			<li class="header__li"><a class="header__a" href="/">Careers</a></li>
+			<li class="header__li"><a class="header__a" href="/">Blog</a></li>
+			<span class="material-icons icon-close" onclick="navToggle()">close</span>
+		</ul>
+
+		<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+	</div>
+	<ul class="header__btn">
+		<li>
+			<a href="/" class="btn _primary">Get started</a>
+		</li>
+	</ul>
+</header>
+
+		<div class="container welcome-content">
+    <div class="welcome__info">
+        <h1 class="welcome__title">A <span>unique</span> approach to learning foreign languages online</h1>
+        <p class="welcome__desc">Learn at your own pace, with lifetime access on mobile and desktop</p>
+        <div class="welcome__btn">
+            <a href="/" class="btn _secondary">Get started</a>
+        </div>
+    </div>
+    <div class="welcome__img">
+        <img src="./img/welcome.svg" alt="Lingua">
+    </div>
+</div>
+
+	</section>
+	<section class="container values">
+    <p class="values__why">WHY CHOOSE US</p>
+    <h2 class="values__title">Our values </h2>
+    <div class="values-list">
+        <div class="values-item">
+            <div class="values-item__img">
+                <img src="./img/value1.png" alt="Speaking clubs">
+            </div>
+            <h3 class="values-item__title">Speaking clubs</h3>
+            <p class="values-item__desc">In our school you will practice your speaking skills and just get a lot of positive emotions!</p>
+        </div>
+        <div class="values-item">
+            <div class="values-item__img">
+                <img src="./img/value2.png" alt="Quality control">
+            </div>
+            <h3 class="values-item__title">Quality control</h3>
+            <p class="values-item__desc">A huge work has been done with the teachers and their work has been monitored thoroughly. </p>
+        </div>
+        <div class="values-item">
+            <div class="values-item__img">
+                <img src="./img/value3.png" alt="Progress analysis">
+            </div>
+            <h3 class="values-item__title">Progress analysis</h3>
+            <p class="values-item__desc">The CEF of Reference has been used at our school. It allows to control our students’ success in studying.</p>
+        </div>
+    </div>
+</section>
+
+	<footer class="container footer">
+	<div class="footer-info">
+		<a href="/" class="footer-info__logo">
+			<img src="./img/footer-logo.svg" alt="Lingua">
+		</a>
+		<a href="/" class="footer-info__address">20 Osgood Rd, Milford, NH 03055, USA</a>
+		<a href="/" class="footer-info__number">+1283871239190213021</a>
+	</div>
+	<div class="footer-links">
+		<div class="footer-links__column">
+			<div class="footer-links__header">Company</div>
+			<a href="/" class="footer-links__link">Careers</a>
+			<a href="/" class="footer-links__link">Teachers</a>
+			<a href="/" class="footer-links__link">Support</a>
+			<a href="/" class="footer-links__link">Contact</a>
+		</div>
+		<div class="footer-links__column">
+			<div class="footer-links__header">Product</div>
+			<a href="/" class="footer-links__link">Courses</a>
+			<a href="/" class="footer-links__link">Pricing</a>
+			<a href="/" class="footer-links__link">Blog</a>
+		</div>
+		<div class="footer-links__column">
+			<div class="footer-links__header">Legal</div>
+			<a href="/" class="footer-links__link">Terms & Conditions</a>
+			<a href="/" class="footer-links__link">Privacy policy</a>
+		</div>
+	</div>
+	<div class="footer-socials">
+		<a href="/" class="footer-socials__link"><img src="./img/facebook.svg" alt="Facebook"></a>
+		<a href="/" class="footer-socials__link"><img src="./img/twitter.svg" alt="Twitter"></a>
+		<a href="/" class="footer-socials__link"><img src="./img/instagram.svg" alt="Instagram"></a>
+	</div>
+</footer>
+
+	<script src="./js/index.bundle.js"></script>
+	<script>
+		function navToggle() {
+			document.getElementById("headerUl").classList.toggle("_active");
+			document.getElementById("headerBackdrop").classList.toggle("_active");
+		}
+	</script>
+</body>
+
+</html>
