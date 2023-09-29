@@ -9,34 +9,45 @@
   grid-template-columns: 1fr 1fr;
   background-color: var(--Background---White);
   gap: 20px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
 }
 
 .accordion__title {
-  font-size: var(--small-font-size);
-  color: var(--title-color);
-  font-weight: 400;
+  color: var(--Text-Primary);
+  font: var(--Title);
   margin: 0;
-  transition: 0.2s;
-
+  user-select: none;
 }
 
 .accordion__header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  margin-bottom: 16px;
+  gap: 10px;
 }
 
 .accordion__description {
-  padding: 0 1.25rem 1.25rem 3rem;
-  font-size: var(--smaller-font-size);
+  color: var(--Background---White, #fff);
+  font: var(--Body_text_18);
+  margin: 0;
 }
 
 .accordion__icon {
-  font-size: 1.5rem;
+  font-size: 24px;
   height: max-content;
-  color: var(--title-color);
+  color: var(--Background---White);
+  padding: 8px;
+  background-color: var(--Primary-200);
+  border-radius: 50%;
   transition: 0.3s;
+
+  @include tablet {
+    font-size: 16px;
+  }
 }
 
 .accordion__item {
@@ -60,8 +71,13 @@
 /*Rotate icon and add font weight to titles*/
 .accordion-open .accordion__icon {
   transform: rotate(45deg);
+  background-color: var(--Background---White);
+  color: var(--Primary-200);
 }
 
 .accordion-open .accordion__title {
-  font-weight: 600;
+  color: var(--Background---White);
+}
+.accordion-open.accordion__item {
+  background-color: var(--Primary-200);
 }
