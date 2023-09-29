@@ -1,0 +1,19 @@
+.question {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+
+
+  &__span {
+    color: var(--Outline-dark);
+    font: var(--Subtitle_1);
+    text-transform: uppercase;
+    max-width: 107px;
+  }
+
+  &__title {
+    color: var(--Text-Primary);
+    font: var(--H2);
+    margin: 4px 0 43px 0;
+  }
+}

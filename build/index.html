@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -83,7 +83,106 @@
         </div>
     </div>
 </section>
- <section class="container lessons">
+<section class="container question">
+  <div class="question__header">
+    <span class="question__span">more info</span>
+    <h2 class="question__title">Common questions</h2>
+  </div>
+  <div class="accordion__container accordion">
+    <div class="accordion__item">
+      <header class="accordion__header">
+        <h3 class="accordion__title">How can I know my level of knowledge?</h3>
+        <i class="bx bx-plus accordion__icon"></i>
+      </header>
+
+      <div class="accordion__content">
+        <p class="accordion__description">
+          By the end of the trial lesson, you will be able to determine for
+          yourself whether this kind of online lesson is right for you or not.
+          In our experience, most students appreciate the benefits of online
+          education and decide to study online.
+        </p>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <header class="accordion__header">
+        <h3 class="accordion__title">How can I know my level of knowledge?</h3>
+        <i class="bx bx-plus accordion__icon"></i>
+      </header>
+
+      <div class="accordion__content">
+        <p class="accordion__description">
+          By the end of the trial lesson, you will be able to determine for
+          yourself whether this kind of online lesson is right for you or not.
+          In our experience, most students appreciate the benefits of online
+          education and decide to study online.
+        </p>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <header class="accordion__header">
+        <h3 class="accordion__title">How can I know my level of knowledge?</h3>
+        <i class="bx bx-plus accordion__icon"></i>
+      </header>
+
+      <div class="accordion__content">
+        <p class="accordion__description">
+          By the end of the trial lesson, you will be able to determine for
+          yourself whether this kind of online lesson is right for you or not.
+          In our experience, most students appreciate the benefits of online
+          education and decide to study online.
+        </p>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <header class="accordion__header">
+        <h3 class="accordion__title">How can I know my level of knowledge?</h3>
+        <i class="bx bx-plus accordion__icon"></i>
+      </header>
+
+      <div class="accordion__content">
+        <p class="accordion__description">
+          By the end of the trial lesson, you will be able to determine for
+          yourself whether this kind of online lesson is right for you or not.
+          In our experience, most students appreciate the benefits of online
+          education and decide to study online.
+        </p>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <header class="accordion__header">
+        <h3 class="accordion__title">How can I know my level of knowledge?</h3>
+        <i class="bx bx-plus accordion__icon"></i>
+      </header>
+
+      <div class="accordion__content">
+        <p class="accordion__description">
+          By the end of the trial lesson, you will be able to determine for
+          yourself whether this kind of online lesson is right for you or not.
+          In our experience, most students appreciate the benefits of online
+          education and decide to study online.
+        </p>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <header class="accordion__header">
+        <h3 class="accordion__title">How can I know my level of knowledge?</h3>
+        <i class="bx bx-plus accordion__icon"></i>
+      </header>
+
+      <div class="accordion__content">
+        <p class="accordion__description">
+          By the end of the trial lesson, you will be able to determine for
+          yourself whether this kind of online lesson is right for you or not.
+          In our experience, most students appreciate the benefits of online
+          education and decide to study online.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="container lessons">
   <h2 class="lessons__title">Get a free trial lesson today</h2>
   <p class="lessons__desc">
     Start fulfilling your language dreams with our school
@@ -96,11 +195,12 @@
         placeholder="Enter your email"
       />
     </label>
-    <a href="/" class="lessons__a">Send</a>
+    <div class="lessons__btn">
+      <a href="/" class="lessons__a">Send</a>
+    </div>
   </div>
 </section>
-
-    <footer class="container footer">
+ <footer class="container footer">
 	<div class="footer-info">
 		<a href="/" class="footer-info__logo">
 			<img src="./img/footer-logo.svg" alt="Lingua">
@@ -146,6 +246,45 @@
           body.style.overflow = "auto";
         }
       }
+    </script>
+    <script>
+      /*=============== ACCORDION ===============*/
+      const accordionItems = document.querySelectorAll(".accordion__item");
+
+      // 1. Selecionar cada item
+      accordionItems.forEach((item) => {
+        const accordionHeader = item.querySelector(".accordion__header");
+
+        // 2. Seleccionar cada click del header
+        accordionHeader.addEventListener("click", () => {
+          // 7. Crear la variable
+          const openItem = document.querySelector(".accordion-open");
+
+          // 5. Llamar a la funcion toggle item
+          toggleItem(item);
+
+          // 8. Validar si existe la clase
+          if (openItem && openItem !== item) {
+            toggleItem(openItem);
+          }
+        });
+      });
+
+      // 3. Crear una funcion tipo constante
+      const toggleItem = (item) => {
+        // 3.1 Crear la variable
+        const accordionContent = item.querySelector(".accordion__content");
+
+        // 6. Si existe otro elemento que contenga la clase accorion-open que remueva su clase
+        if (item.classList.contains("accordion-open")) {
+          accordionContent.removeAttribute("style");
+          item.classList.remove("accordion-open");
+        } else {
+          // 4. Agregar el height maximo del content
+          accordionContent.style.height = accordionContent.scrollHeight + "px";
+          item.classList.add("accordion-open");
+        }
+      };
     </script>
   </body>
 </html>

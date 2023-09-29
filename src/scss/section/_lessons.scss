@@ -23,9 +23,13 @@
   &__sign-up {
     display: flex;
     gap: 20px;
-  }
+    align-items: center;
+    justify-content: center;
 
-  &__label {
+    @include mobile {
+      flex-direction: column;
+      gap: 30px;
+    }
   }
 
   &__input {
@@ -38,7 +42,7 @@
   }
 
   &__a {
-    padding: 12px 32px;
+    padding: 19px 32px;
     border-radius: 73px;
     background: var(--Primary-200);
     font: var(--Button);

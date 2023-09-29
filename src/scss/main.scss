@@ -5,6 +5,7 @@
 @import 'utils/vars';
 @import 'utils/mixins';
 @import 'utils/fonts';
+@import 'utils/accordion';
 
 // layout
 @import 'layout/base';
@@ -24,4 +25,5 @@
 @import 'section/welcome';
 @import 'section/values';
 @import 'section/lessons';
+@import 'section/question';
 
