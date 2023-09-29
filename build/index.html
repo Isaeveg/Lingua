@@ -259,38 +259,40 @@
       /*=============== ACCORDION ===============*/
       const accordionItems = document.querySelectorAll(".accordion__item");
 
-      // 1. Selecionar cada item
+      // Создать переменную для отслеживания текущего открытого элемента
+      let openItem = null;
+
+      // 1. Выбрать каждый элемент
       accordionItems.forEach((item) => {
         const accordionHeader = item.querySelector(".accordion__header");
 
-        // 2. Seleccionar cada click del header
+        // 2. Выбрать каждый клик заголовка
         accordionHeader.addEventListener("click", () => {
-          // 7. Crear la variable
-          const openItem = document.querySelector(".accordion-open");
-
-          // 5. Llamar a la funcion toggle item
-          toggleItem(item);
-
-          // 8. Validar si existe la clase
+          // Если есть открытый элемент, закрыть его
           if (openItem && openItem !== item) {
             toggleItem(openItem);
           }
+
+          // 5. Вызвать функцию toggleItem для текущего элемента
+          toggleItem(item);
         });
       });
 
-      // 3. Crear una funcion tipo constante
+      // 3. Создать функцию toggleItem
       const toggleItem = (item) => {
-        // 3.1 Crear la variable
+        // 3.1 Создать переменную для контента аккордеона
         const accordionContent = item.querySelector(".accordion__content");
 
-        // 6. Si existe otro elemento que contenga la clase accorion-open que remueva su clase
+        // 6. Если элемент уже открыт, закрыть его
         if (item.classList.contains("accordion-open")) {
           accordionContent.removeAttribute("style");
           item.classList.remove("accordion-open");
+          openItem = null; // Установить открытый элемент как null
         } else {
-          // 4. Agregar el height maximo del content
+          // 4. Установить максимальную высоту контента
           accordionContent.style.height = accordionContent.scrollHeight + "px";
           item.classList.add("accordion-open");
+          openItem = item; // Установить текущий открытый элемент
         }
       };
     </script>

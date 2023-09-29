@@ -65,7 +65,7 @@
 .accordion__content {
   overflow: hidden;
   height: 0;
-  transition: all 0.25s ease;
+  transition: var(--transition);
 }
 
 /*Rotate icon and add font weight to titles*/
