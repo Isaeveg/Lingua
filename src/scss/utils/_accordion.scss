@@ -4,13 +4,20 @@
   align-content: center;
 }
 
+.accordion__collumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .accordion__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--Background---White);
   gap: 20px;
+  grid-auto-rows: max-content;
 
-  @include mobile {
+  @include tablet-small {
     grid-template-columns: 1fr;
   }
 }
@@ -25,6 +32,7 @@
 .accordion__header {
   display: flex;
   justify-content: space-between;
+  max-height: 110px;
   cursor: pointer;
   margin-bottom: 16px;
   gap: 10px;
