@@ -1,5 +1,8 @@
 .teachers {
   margin-top: 240px;
+  &__img {
+    border-radius: 60px;
+  }
   &__header {
     display: flex;
     flex-direction: column;
@@ -13,7 +16,74 @@
 
   &__title {
     color: var(--Text-Primary);
-    margin: 4px 0 0 0;
+    margin: 4px 0 58px 0;
     font: var(--H2);
   }
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    color: var(--Text-Primary);
+    font: var(--H5);
+    margin: 0 0 17px 0;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img {
+      max-width: 36px;
+      max-height: 36px;
+    }
+  }
+
+  &__desc {
+    color: var(--Body-text, #666680);
+    font: var(--Body_text_18);
+    margin: 0;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 366px;
+  @include desktop-small {
+    align-items: center;
+  }
+}
+.owl-next {
+  img {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: var(--Primary-200);
+  }
+}
+.owl-prev {
+  img {
+    padding: 14px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--Outline);
+    margin-right: 30px;
+  }
+}
+.owl-nav.disabled {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  top: -75px;
+}
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  top: -75px;
 }
