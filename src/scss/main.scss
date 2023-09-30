@@ -1,29 +1,31 @@
 // vendors
-@import 'vendors/reset';
+@import "vendors/reset";
 
 // utils
-@import 'utils/vars';
-@import 'utils/mixins';
-@import 'utils/fonts';
-@import 'utils/accordion';
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/accordion";
+@import "utils/carousel/owl.carousel.min";
+@import "utils/carousel/owl.theme.default.min";
+@import "utils/carousel/carousel";
+
 
 // layout
-@import 'layout/base';
-@import 'layout/scroll';
+@import "layout/base";
+@import "layout/scroll";
 
-@import 'layout/grid';
+@import "layout/grid";
 
 // components
 
-@import 'components/btn';
+@import "components/btn";
 
+@import "components/header";
+@import "components/footer";
 
-@import 'components/header';
-@import 'components/footer';
-
-
-@import 'section/welcome';
-@import 'section/values';
-@import 'section/lessons';
-@import 'section/question';
-
+@import "section/welcome";
+@import "section/values";
+@import "section/lessons";
+@import "section/teachers";
+@import "section/question";

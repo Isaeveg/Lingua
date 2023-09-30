@@ -1,0 +1,19 @@
+.teachers {
+  margin-top: 240px;
+  &__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__span {
+    color: var(--Outline-dark);
+    font: var(--Subtitle_1);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: var(--Text-Primary);
+    margin: 4px 0 0 0;
+    font: var(--H2);
+  }
+}
