@@ -1,0 +1,78 @@
+.students {
+  margin-top: 240px;
+  &__first {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 59px;
+  }
+
+  &__span {
+    color: var(--Outline-dark);
+    font: var(--Subtitle_1);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: var(--Text-Primary, #181b32);
+    font: var(--H2);
+    margin: 4px 0 0 0;
+  }
+  &__swiper {
+    min-width: 0;
+  }
+
+  /* .students__wrapper */
+
+  &__wrapper {
+  }
+
+  /* .students__slide */
+
+  &__slide {
+    display: flex;
+    gap: 128px;
+    align-items: center;
+  }
+
+  /* .students__info */
+
+  &__info {
+  }
+
+  /* .students__header */
+
+  &__header {
+  }
+
+  /* .students__name */
+
+  &__name {
+    color: var(--Text-Primary, #181b32);
+    font: var(--H3);
+    margin: 0 0 19px 0;
+  }
+
+  /* .students__level */
+
+  &__level {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  /* .students__educ */
+
+  &__educ {
+    color: var(--Body-text);
+    font: var(--Body_text_18);
+    margin: 0;
+  }
+
+  /* .students__desc */
+
+  &__desc {
+    color: var(--Text-Primary, #181b32);
+    font: var(--H4);
+    margin: 0;
+  }
+}

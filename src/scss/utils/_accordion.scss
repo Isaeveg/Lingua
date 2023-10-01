@@ -27,12 +27,13 @@
   font: var(--Title);
   margin: 0;
   user-select: none;
+  max-height: 110px;
 }
 
 .accordion__header {
   display: flex;
   justify-content: space-between;
-  max-height: 110px;
+
   cursor: pointer;
   margin-bottom: 16px;
   gap: 10px;
