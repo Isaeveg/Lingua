@@ -206,11 +206,43 @@
           </div>
         </div>
       </div>
-
+      <div class="swiper-slide students__slide">
+        <img width="502px" height="633px" src="img/student.jpg" alt="Student" />
+        <div class="students__info">
+          <div class="students__header">
+            <h4 class="students__name">Martin Watson</h4>
+            <div class="students__level">
+              <img src="img/teachers/spain.svg" alt="Spain" />
+              <p class="students__educ">B2 course student</p>
+            </div>
+            <p class="students__desc">
+              There is no way I could have made the same progress learning
+              Spanish without using Lingua. The best part is now learning
+              Spanish has become one of my biggest hobbies.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide students__slide">
+        <img width="502px" height="633px" src="img/student.jpg" alt="Student" />
+        <div class="students__info">
+          <div class="students__header">
+            <h4 class="students__name">Martin Watson</h4>
+            <div class="students__level">
+              <img src="img/teachers/spain.svg" alt="Spain" />
+              <p class="students__educ">B2 course student</p>
+            </div>
+            <p class="students__desc">
+              There is no way I could have made the same progress learning
+              Spanish without using Lingua. The best part is now learning
+              Spanish has become one of my biggest hobbies.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination">
-      <span class="swiper-pagination-bullet"></span>
       <span class="swiper-pagination-bullet"></span>
     </div>
 
@@ -2660,13 +2692,15 @@
         direction: "horizontal",
         loop: true,
         autoplay: {
-          delay: 10000,
+          delay: 7000,
           pauseOnMouseEnter: true,
           disableOnInteraction: false,
         },
+        autoplaySpeed: 1500,
         // If we need pagination
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
 
 

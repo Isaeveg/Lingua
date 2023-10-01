@@ -21,10 +21,6 @@
     min-width: 0;
   }
 
-  /* .students__wrapper */
-
-  &__wrapper {
-  }
 
   /* .students__slide */
 
@@ -32,6 +28,9 @@
     display: flex;
     gap: 128px;
     align-items: center;
+    img{
+        z-index: 15;
+    }
   }
 
   /* .students__info */
@@ -75,4 +74,14 @@
     font: var(--H4);
     margin: 0;
   }
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: var(--Primary-200);
+}
+
+.swiper-pagination {
+    z-index: -1;
 }
