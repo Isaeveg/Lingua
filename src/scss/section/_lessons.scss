@@ -41,11 +41,18 @@
     border-color: transparent;
   }
 
-  &__a {
+  &__btn {
     padding: 19px 32px;
     border-radius: 73px;
     background: var(--Primary-200);
-    font: var(--Button);
-    color: var(--Background---White);
+    transition: var(--transition);
+    cursor: pointer;
+    &:hover {
+      scale: 1.1;
+    }
+    a {
+      font: var(--Button);
+      color: var(--Background---White);
+    }
   }
 }

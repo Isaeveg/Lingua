@@ -25,6 +25,10 @@
     font: var(--Caption);
     color: var(--Body-text);
     margin-bottom: 10px;
+    transition: var(--transition);
+    &:hover {
+      color: #181818;
+    }
   }
 }
 .footer-links {
@@ -53,6 +57,10 @@
     display: block;
     font: var(--Body_text_14);
     color: var(--Body-text);
+    transition: var(--transition);
+    &:hover {
+      color: #181818;
+    }
   }
 }
 .footer-socials {

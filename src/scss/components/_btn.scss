@@ -9,10 +9,18 @@
   &._primary {
     background: var(--Background---White);
     color: var(--Primary-200);
+    transition: var(--transition);
+    &:hover {
+      scale: 1.1;
+    }
   }
   &._secondary {
     padding: 17px 32px;
     color: var(--Background---White);
     background: var(--Primary-200);
+    transition: var(--transition);
+    &:hover {
+      scale: 1.1;
+    }
   }
 }

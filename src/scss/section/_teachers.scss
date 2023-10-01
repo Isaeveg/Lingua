@@ -65,7 +65,10 @@
     padding: 15px;
     border-radius: 50%;
     background-color: var(--Primary-200);
-
+    transition: var(--transition);
+    &:hover {
+      scale: 1.1;
+    }
     @include tablet {
       padding: 8px;
     }
@@ -78,6 +81,10 @@
     background-color: transparent;
     border: 1px solid var(--Outline);
     margin-right: 30px;
+    transition: var(--transition);
+    &:hover {
+      scale: 1.1;
+    }
     @include tablet {
       padding: 8px;
     }
@@ -100,4 +107,3 @@
   right: 0;
   top: -75px;
 }
-
