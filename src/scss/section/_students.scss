@@ -1,5 +1,6 @@
 .students {
   margin-top: 240px;
+
   &__first {
     display: flex;
     flex-direction: column;
@@ -20,46 +21,47 @@
   &__swiper {
     min-width: 0;
   }
-
-
-  /* .students__slide */
-
+  &__header {
+    @include desktop-small {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
   &__slide {
     display: flex;
     gap: 128px;
     align-items: center;
-    img{
-        z-index: 15;
+    padding-bottom: 50px;
+    @include desktop-small {
+      flex-direction: column;
+      gap: 50px;
     }
   }
+  &__img {
+    z-index: 15;
+    height: 100%;
 
-  /* .students__info */
-
-  &__info {
+    @include desktop-small {
+      height: 400px;
+      object-fit: contain;
+    }
   }
-
-  /* .students__header */
-
-  &__header {
-  }
-
-  /* .students__name */
-
   &__name {
     color: var(--Text-Primary, #181b32);
     font: var(--H3);
     margin: 0 0 19px 0;
   }
 
-  /* .students__level */
-
   &__level {
     display: flex;
     gap: 10px;
     margin-bottom: 50px;
+    @include desktop-small {
+      margin-bottom: 25px;
+    }
   }
-
-  /* .students__educ */
 
   &__educ {
     color: var(--Body-text);
@@ -67,12 +69,14 @@
     margin: 0;
   }
 
-  /* .students__desc */
-
   &__desc {
     color: var(--Text-Primary, #181b32);
     font: var(--H4);
     margin: 0;
+
+    @include desktop-small {
+      max-width: 700px;
+    }
   }
 }
 
@@ -83,5 +87,14 @@
 }
 
 .swiper-pagination {
-    z-index: -1;
+  z-index: -1;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
 }

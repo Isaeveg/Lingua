@@ -3,6 +3,7 @@ $desktop-small: 1200px;
 $tablet: 992px;
 $tablet-small: 768px;
 $mobile: 576px;
+$mobile-se: 490px;
 $mobile-sm: 390px;
 
 :root {
@@ -33,11 +34,16 @@ $mobile-sm: 390px;
   --Text-Primary: #181b32;
   --Outline-dark: #b0b0c0;
   --Outline: #e8e8f6;
-
+  @media screen and (max-width: 1200px) {
+    --H3: 700 24px/112% var(--ff);
+    --H4: 300 16px/180% var(--ff);
+  }
   @media screen and (max-width: 992px) {
     --H1: 300 32px/126% var(--ff);
     --Body_text_18: 300 14px/190% var(--ff);
+    --H3: 700 24px/112% var(--ff);
     --H2: 300 24px/130% var(--ff);
+    --H4: 300 16px/180% var(--ff);
     --Title: 500 14px/180% var(--ff);
   }
 }

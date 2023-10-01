@@ -22,6 +22,11 @@
     @content;
   }
 }
+@mixin mobile-se {
+  @media (max-width: $mobile-se) {
+    @content;
+  }
+}
 @mixin mobile-small {
   @media (max-width: $mobile-sm) {
     @content;
